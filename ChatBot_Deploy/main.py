@@ -22,7 +22,7 @@ app.add_middleware(
 
 # Initialize the model
 try:
-    model = genai.GenerativeModel("models/gemini-pro")
+    model = genai.GenerativeModel("models/gemini-2.0-flash,")
 except Exception as e:
     raise HTTPException(status_code=500, detail=f"Model initialization failed: {str(e)}")
 
